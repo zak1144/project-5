@@ -1,15 +1,25 @@
-.nav {
+.nav,
+.img--logo {
     display: flex;
+}
+.nav{
     flex-direction: column; 
-    margin-top: em(100px);
-
+    margin-top: em(40px);
+    align-items: center;
+    }
     
+    .img--logo {
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
     }
-    .img--logo,
-    .nav {
-        align-self: center;
+    @include mq(medium){
+        .nav {
+            flex-direction: row;
+            justify-content: flex-end;
+        }
     }
-    /*
+    
     .nav{
     margin-top : em(40px);
     margin-bottom: em(34px);
@@ -28,4 +38,3 @@
     }
   }
 }
-*/

@@ -1,13 +1,19 @@
 //images
-.img--frame {
+.img {
+    &--frame {
     border: 1px solid palette(grey, light);
     padding: em(12px);
-    margin-bottom: em(24px);
     max-width: 100%;
     height: auto;
-}
-.img--avatar {
-        margin-bottom: em(24px);
-        max-width: 100%;
-        height: auto;
+    display: block;
+    margin: auto;
+    }
+
+&--avatar {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+        
+    }
 }

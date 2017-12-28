@@ -200,22 +200,19 @@ p {
   margin: 0 0 em(30px, 18px);
   color: palette(grey, dark); }
 
-/*
-%nav-item-disp {
-    display: block;
-    margin: em(14px) 0;
-}
-%nav-item-link {
-    font-size: em(20px);
-    text-decoration: none;
-    font-weight: $font-weight--light;
-    padding: em(8px, 20px);
-}
-%nav-item-on {
-    color: $white;
-    background-color: $color-accent;
-}
-*/
+.nav__item {
+  margin: 0.875em 0; }
+
+.nav__item a {
+  font-size: 1.25em;
+  text-decoration: none;
+  font-weight: 300;
+  padding: 0.4em; }
+
+.nav__item a:hover, .nav__item a[href^="#type"] {
+  color: #fff;
+  background-color: #27E7BF; }
+
 .headline--primary {
   font-family: "Lato", "Helvetica Neue", sans-serif;
   font-size: 2.625em;
@@ -340,7 +337,7 @@ p {
 
 @media (min-width: 1px) and (max-width: 480px) {
   [class*="grid__col--"] {
-    margin-top: 0.75em;
+    margin-top: 3.5em;
     margin-bottom: 0.75em; } }
 @media (min-width: 481px) {
   [class*="grid__col--"] {
@@ -381,44 +378,40 @@ p {
 .img--frame {
   border: 1px solid #a8a8a8;
   padding: 0.75em;
-  margin-bottom: 1.5em;
   max-width: 100%;
-  height: auto; }
-
+  height: auto;
+  display: block;
+  margin: auto; }
 .img--avatar {
-  margin-bottom: 1.5em;
   max-width: 100%;
-  height: auto; }
+  height: auto;
+  display: block;
+  margin: auto; }
+
+.nav,
+.img--logo {
+  display: flex; }
 
 .nav {
-  display: flex;
   flex-direction: column;
-  margin-top: 6.25em; }
+  margin-top: 2.5em;
+  align-items: center; }
 
-.img--logo,
+.img--logo {
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto; }
+
+@media (min-width: 481px) {
+  .nav {
+    flex-direction: row;
+    justify-content: flex-end; } }
 .nav {
-  align-self: center; }
+  margin-top: 2.5em;
+  margin-bottom: 2.125em; }
+  .nav__item a {
+    color: #5e5e5e; }
 
-    /*
-    .nav{
-    margin-top : em(40px);
-    margin-bottom: em(34px);
-  @include e(item) {
-    @extend %nav-item-disp;
-    a {
-        @extend %nav-item-link;
-        color: palette(grey, x-dark);
-        &:hover {
-            @extend %nav-item-on;
-        }
-    }
-    
-    a[href^="#type"] {
-        @extend %nav-item-on;
-    }
-  }
-}
-*/
 .btn--default {
   background-color: #27D8E7;
   padding: 0.875em;
@@ -458,13 +451,14 @@ p {
       width: 100%; } }
   @media (min-width: 481px) {
     [class^="btn--"] {
-      width: auto;
+      width: 100%;
       display: inline-block; } }
 
 .form__label {
   display: block;
   margin-bottom: 0.625em; }
 .form__input {
+  width: 100%;
   font-size: 1.125em;
   padding: 0.8333333333em;
   margin-bottom: 1.1111111111em;
