@@ -451,7 +451,7 @@ p {
       width: 100%; } }
   @media (min-width: 481px) {
     [class^="btn--"] {
-      width: 100%;
+      width: auto;
       display: inline-block; } }
 
 .form__label {
@@ -461,6 +461,7 @@ p {
   width: 100%;
   font-size: 1.125em;
   padding: 0.8333333333em;
+  margin-top: 0.5555555556em;
   margin-bottom: 1.1111111111em;
   border-style: none;
   border-bottom: 6px solid #27E7BF;
@@ -470,5 +471,9 @@ p {
     border-color: #27E7BF; }
 .form__btn {
   background-color: #27D8E7; }
+
+@media (min-width: 481px) {
+  .form [class^="btn--"] {
+    width: 100%; } }
 
 /*# sourceMappingURL=styles.css.map */
