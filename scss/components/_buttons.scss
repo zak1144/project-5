@@ -1,0 +1,16 @@
+.btn {
+    @include bg-colors($ui-colors);
+}
+
+[class^="btn--"] {
+    @extend %btn;
+    margin-bottom: em(20px, 14px);
+    text-align: center; 
+    @include mq(small) {
+        width: 100%;
+    }
+    @media (min-width: 481px) { 
+      width: auto;
+      display: inline-block;
+    }
+  }

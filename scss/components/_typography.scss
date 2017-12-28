@@ -1,0 +1,30 @@
+.container {
+    font-family: $font-family--primary;
+    font-size: $base__font-size;
+    line-height: ($base__line / $base__font-size);  
+     
+}
+.headline {
+    &--primary {
+        @extend %hdln-prim;
+    }
+    &--secondary {
+        @extend %hdln-sec;
+    }
+}
+
+.blockquote {
+    font-size: em(24px);
+    font-style: italic;
+    font-weight: $font-weight--medium;
+    margin: em(32px, 24px) 0;
+    padding: 0 0 0 5%;
+    color: palette(grey, dark);
+    border-left: solid em(6px) $color-accent;
+}
+
+.link {
+    color: $color-primary;
+    text-decoration: none;
+    font-weight: $font-weight--bold;
+}

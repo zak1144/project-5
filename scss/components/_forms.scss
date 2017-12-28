@@ -1,0 +1,26 @@
+.form {
+    
+    &__label{
+        &--hidden{
+            @extend .srt;
+        }
+        display: block;
+        margin-bottom: em(10px);
+    }
+    &__input {
+        font-size: em(18px);
+        padding: em(15px, 18px);
+        margin-bottom: em(20px, 18px);
+        border-style: none;
+        border-bottom: 6px solid $color-accent;
+        color: $black;
+        font-weight: $font-weight--medium;
+        &:focus {
+            border-color: $color-accent;
+        }
+    }
+    @include e(btn) {
+        @extend %btn;
+        background-color: $color-primary;
+    }
+}

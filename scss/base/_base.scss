@@ -1,0 +1,12 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box; 
+}
+
+
+p{
+    font-size: em(18px);
+    line-height: (27px / 18px);
+    margin: 0 0 em(30px, 18px);
+    color: palette(grey, dark);
+}

@@ -1,0 +1,90 @@
+//font-stacks
+
+$font-url--google       : 'http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900';
+$font-family--primary  : 'Lato', 'Helvetica Neue', sans-serif; 
+$font-family--secondary: 'Helvetica Neue', sans-serif;
+
+// Font Weights
+
+$font-weight--thin       : 100;
+$font-weight--light      : 300;
+$font-weight--medium     : 400;
+$font-weight--bold       : 700;
+$font-weight--ultra-bold : 900;
+
+//descriptive colors
+
+$white         : #fff;
+$black         : #000;
+$grey          : #878787;
+$turquoise     : #27E7BF;
+$piction-blue  : #27D8E7;
+$jungle-green  : #2BB68C;
+$cranberry     : #D65175;
+$burnt-siena   : #EC7646;
+$lavender      : #B761D6;
+
+//functional color variables
+
+$color-primary  : $piction-blue;
+$color-secondary: $jungle-green;
+$color-accent   : $turquoise;
+$color-shadow   : rgba(black, .2);
+
+//color palettes
+
+$palettes: (
+ grey: (
+    base    : $grey,
+    light   : lighten($grey, 13%),
+    x-light : lighten($grey,36%),
+    xx-light: lighten($grey, 42%),
+    dark    : darken($grey, 8%),
+    x-dark  : darken($grey, 16%)
+)
+);
+
+//text
+
+$base__font-size: 16px;
+$base__line    : 24px; 
+
+//UI color in maps
+
+$ui-colors: (
+    default : $piction-blue,
+    success : $jungle-green,
+    error   : $cranberry,
+    warning : $burnt-siena,
+    info    : $lavender
+    );
+
+    //border
+    $br--default: .4em;
+
+    //transition
+    $trns-duration: .4s;
+
+    // Grid
+
+    $g-col-width      : 65px;
+    $g-gutter-width   : 20px;
+    $g-col-count      : 12;
+    $g-cont-max-w     : 1100px;
+
+    //grid colors
+    $col-colors :(
+        12 : lighten($piction-blue, 18%),
+        8  : lighten($burnt-siena, 14%),
+        7  : lighten($cranberry, 20%),
+        6  : darken($piction-blue, 8%),
+        5  : lighten($jungle-green, 18%),
+        4  : lighten($piction-blue, 26%),
+        3  : lighten($lavender, 22%)  
+    );
+
+    //breakpoints
+
+    $brkpoint-sm : 1px;
+    $brkpoint-md : 480px;
+    $brkpoint-lg : 1100px;
