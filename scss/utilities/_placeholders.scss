@@ -20,7 +20,7 @@
     font-family: $font-family--primary;
     font-size: em(42px);
     line-height: em(46px, 42px);
-    margin-bottom: em(70px, 42px);
+    margin-bottom: em(60px, 42px);
     color: $color-accent;
 }
 %hdln-sec {
@@ -28,6 +28,7 @@
     font-size: em(18px);
     font-weight: $font-weight--light;
     color: palette(grey, x-dark);
+    
     
 }
 

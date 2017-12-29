@@ -1,22 +1,21 @@
-.nav,
-.img--logo {
-    display: flex;
-}
+
 .nav{
-    flex-direction: column; 
-    margin-top: em(40px);
-    align-items: center;
+    @include flexcol;
     }
     
     .img--logo {
-        justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
+        @include flexcol;
+        
     }
     @include mq(medium){
         .nav {
             flex-direction: row;
             justify-content: flex-end;
+            flex-wrap: wrap;
+        }
+        .img--logo {
+            margin-top: em(24px);
+            width: 165px;
         }
     }
     
@@ -24,6 +23,7 @@
     margin-top : em(40px);
     margin-bottom: em(34px);
   @include e(item) {
+      padding-left: em(14px);
     @extend %nav-item-disp;
     a {
         @extend %nav-item-link;

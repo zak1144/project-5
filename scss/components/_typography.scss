@@ -2,15 +2,22 @@
     font-family: $font-family--primary;
     font-size: $base__font-size;
     line-height: ($base__line / $base__font-size);  
+    
      
 }
 .headline {
     &--primary {
         @extend %hdln-prim;
+        
     }
     &--secondary {
         @extend %hdln-sec;
+
     }
+}
+//to add margin on last 3 <h4> elements
+.headline--secondary:nth-child(n+3){
+    margin-left: em(22px);
 }
 
 .blockquote {

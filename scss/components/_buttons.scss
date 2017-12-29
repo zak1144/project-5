@@ -9,8 +9,17 @@
     @include mq(small) {
         width: 100%;
     }
-    @media (min-width: 481px) { 
+    @include mq(medium) { 
       width: auto;
       display: inline-block;
+      padding-left: em(70px);
+      padding-right: em(70px);
+    }
+  }
+  @include mq(medium) {
+    .grid__col--12{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
     }
   }

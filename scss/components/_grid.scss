@@ -44,9 +44,23 @@
 	margin-right: auto;
 }
 .grid {
-    &__row{
+    &__row {
     width: 90%;
     @extend %clearfix;
     @extend .centered;
     }
+}
+.grid__row .centered{
+        @extend .centered;
+}
+@include mq(medium){
+[class*=grid__col--4]:nth-of-type(2) {
+    margin-left: em(24px);
+}
+[class*=grid__col--3]:nth-of-type(3) {
+    margin-left: em(24px);
+}
+[class*=grid__col--3]:nth-of-type(2) {
+    margin-left: em(24px);
+}
 }

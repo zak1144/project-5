@@ -1,5 +1,5 @@
 .form {
-    
+    margin-top: em(18px);
     &__label{
         &--hidden{
             @extend .srt;
