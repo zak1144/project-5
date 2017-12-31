@@ -2,7 +2,7 @@
 //-----------------
 
 //calculate grid columns
-@include mq(medium) {
+@mixin g-columns {
 @for $i from 1 through $g-col-count {
     $context: g-context($g-col-width, $g-col-count ,$g-gutter-width) !global;  
     $target: ($g-col-width * $i) + ($g-gutter-width * ($i - 1));
@@ -22,20 +22,16 @@
  }
 
 [class*="grid__col--"] {
-    @include mq(small) {
-        margin-top: em(56px);
-        margin-bottom:  em(12px);    
+    @include g-columns;    
     }
     @include mq(medium) {
+        @include g-columns;
         float: left;
         min-height: 1px;
         padding-left: 10px;
         padding-right: 10px;
-        &:last-of-type {
-            float: right;
-        }
+        
     }
-}
 
 //centered class
 .centered {
@@ -48,10 +44,11 @@
     width: 90%;
     @extend %clearfix;
     @extend .centered;
-    //to evenly space grid colored columns for 481px
+    //to evenly space grid colored columns for 769px
     @include mq(medium){
     display:flex;
     justify-content: space-between;
+    flex: auto;
     }
     }
     
@@ -67,15 +64,5 @@
         display: flex;
         justify-content: space-between;
     }
-}
-    /*
-[class*=grid__col--4]:nth-of-type(2) {
-    margin-left: em(20px);
-}
-[class*=grid__col--3]:nth-of-type(3) {
-    margin-left: em(20px);
-}
-[class*=grid__col--3]:nth-of-type(2) {
-    margin-left: em(20px);
 }
 */

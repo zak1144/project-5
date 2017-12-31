@@ -1,29 +1,14 @@
-
-.nav{
-    @include flexcol;
-    }
     
     .img--logo {
         @include flexcol;
         
     }
-    @include mq(medium){
-        .nav {
-            flex-direction: row;
-            justify-content: flex-end;
-            flex-wrap: wrap;
-        }
-        .img--logo {
-            margin-top: em(24px);
-            width: 165px;
-        }
-    }
-    
     .nav{
+    @include flexcol;
     margin-top : em(40px);
     margin-bottom: em(34px);
-  @include e(item) {
-      padding-left: em(14px);
+    @include e(item) {
+      padding-left: em(6px);
     @extend %nav-item-disp;
     a {
         @extend %nav-item-link;
@@ -37,4 +22,17 @@
         @extend %nav-item-on;
     }
   }
+}
+
+@include mq(medium){
+    .nav {
+        flex-direction: row;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+    }
+    .img--logo {
+        margin-top: em(24px);
+        width: 165px;
+        margin-right: auto;
+    }
 }

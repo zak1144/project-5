@@ -67,10 +67,10 @@ $ui-colors: (
 
     // Grid
 
-    $g-col-width      : 65px;
-    $g-gutter-width   : 20px;
+    $g-col-width      : 50px;
+    $g-gutter-width   : 8px;
     $g-col-count      : 12;
-    $g-cont-max-w     : 1100px;
+    $g-cont-max-w     : 1150px;
 
     //grid colors
     $col-colors :(
@@ -85,6 +85,6 @@ $ui-colors: (
 
     //breakpoints
 
-    $brkpoint-sm : 1px;
-    $brkpoint-md : 480px;
+    $brkpoint-sm : 768px;
+    $brkpoint-md : 769px;
     $brkpoint-lg : 1100px;

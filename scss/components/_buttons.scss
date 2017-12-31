@@ -5,22 +5,15 @@
 [class^="btn--"] {
     @extend %btn;
     margin-bottom: em(20px, 14px);
-    text-align: center; 
-    @include mq(small) {
-        width: 100%;
-    }
+    text-align: center;
+    width: 100%;
+    
     @include mq(medium) { 
-      width: auto;
+      width: 17%;
       display: inline-block;
-      padding-left: em(70px);
-      padding-right: em(70px);
-    }
-  }
-  @include mq(medium) {
-    .grid__col--12{
-        display:flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
+      //padding-left: em(20px);
+      //padding-right: em(20px);
+      //display:flex;
+      //justify-content: space-between;
     }
   }

@@ -1,7 +1,7 @@
 //Nav items
 
 %nav-item-disp {
-    margin: em(14px) 0;
+    margin: em(14px) em(8px);
 }
 %nav-item-link {
     font-size: em(20px);
@@ -12,6 +12,7 @@
 %nav-item-on {
     color: $white;
     background-color: $color-accent;
+    border-radius : $br--default;
 }
 
 //headlines
