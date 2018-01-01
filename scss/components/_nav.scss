@@ -28,6 +28,9 @@
     .nav {
         flex-direction: row;
         justify-content: center;
+        @include e(item) { 
+            width: auto;
+        }
     }
     .img--logo {
         margin-top: em(24px);
