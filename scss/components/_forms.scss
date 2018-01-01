@@ -29,5 +29,6 @@
 @include mq(medium){
 .form [class^="btn--"] {
     width: 100%;
+    margin: 0 auto;
     }
 }

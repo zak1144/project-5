@@ -207,7 +207,10 @@ p {
   font-size: 1.25em;
   text-decoration: none;
   font-weight: 300;
-  padding: 0.4em; }
+  padding: 0.4em;
+  display: block;
+  width: 100%;
+  text-align: center; }
 
 .nav__item a:hover, .nav__item a[href^="#type"] {
   color: #fff;
@@ -252,13 +255,12 @@ p {
   position: absolute;
   width: 1px; }
 
-.grid__row:after {
-  content: "";
-  display: table;
-  clear: both; }
+.container {
+  margin: 0 auto;
+  max-width: 1200px; }
 
 .theme__colors.grid__col--12 {
-  background-color: #7ae7f0;
+  background-color: #7af0d7;
   padding: 0.875em;
   margin-top: 0.75em;
   text-align: center;
@@ -372,29 +374,17 @@ p {
   margin-right: auto; }
 
 .grid__row {
-  width: 90%; }
+  width: 90%;
+  margin-bottom: 2.5em; }
   @media (min-width: 769px) {
     .grid__row {
       display: flex;
-      justify-content: space-between;
-      flex: auto; } }
+      justify-content: space-between; } }
 
-/*
-@include mq(medium){
-    [class*=grid__col--4],
-    [class*=grid__col--3]{
-        display: flex;
-        justify-content: space-between;
-    }
-}
-*/
 .container {
   font-family: "Lato", "Helvetica Neue", sans-serif;
   font-size: 16px;
   line-height: 1.5; }
-
-.headline--secondary:nth-child(n+3) {
-  margin-left: 1.375em; }
 
 .blockquote {
   font-size: 1.5em;
@@ -421,7 +411,8 @@ p {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: auto; }
+  margin: auto;
+  margin-top: 1.25em; }
 
 .img--logo {
   display: flex;
@@ -446,7 +437,7 @@ p {
 @media (min-width: 769px) {
   .nav {
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
     flex-wrap: wrap; }
 
   .img--logo {
@@ -490,8 +481,9 @@ p {
   width: 100%; }
   @media (min-width: 769px) {
     [class^="btn--"] {
-      width: 17%;
-      display: inline-block; } }
+      width: 15%;
+      display: inline-block;
+      margin: 10px 25px; } }
 
 .form {
   margin-top: 1.125em; }
@@ -515,6 +507,7 @@ p {
 
 @media (min-width: 769px) {
   .form [class^="btn--"] {
-    width: 100%; } }
+    width: 100%;
+    margin: 0 auto; } }
 
 /*# sourceMappingURL=styles.css.map */

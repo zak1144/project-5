@@ -1,6 +1,9 @@
 //grid system
 //-----------------
-
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
 //calculate grid columns
 @mixin g-columns {
 @for $i from 1 through $g-col-count {
@@ -42,13 +45,12 @@
 .grid {
     &__row {
     width: 90%;
-    @extend %clearfix;
     @extend .centered;
+    margin-bottom: em(40px);
     //to evenly space grid colored columns for 769px
     @include mq(medium){
     display:flex;
     justify-content: space-between;
-    flex: auto;
     }
     }
     
@@ -57,12 +59,3 @@
 .grid__row .centered{
         @extend .centered;
 }
-/*
-@include mq(medium){
-    [class*=grid__col--4],
-    [class*=grid__col--3]{
-        display: flex;
-        justify-content: space-between;
-    }
-}
-*/

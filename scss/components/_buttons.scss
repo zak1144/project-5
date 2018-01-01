@@ -9,11 +9,8 @@
     width: 100%;
     
     @include mq(medium) { 
-      width: 17%;
+      width: 15%;
       display: inline-block;
-      //padding-left: em(20px);
-      //padding-right: em(20px);
-      //display:flex;
-      //justify-content: space-between;
+      margin: 10px 25px;    
+      }
     }
-  }

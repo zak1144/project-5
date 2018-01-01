@@ -8,6 +8,9 @@
     text-decoration: none;
     font-weight: $font-weight--light;
     padding: em(8px, 20px);
+    display: block;
+    width: 100%;
+    text-align: center;
 }
 %nav-item-on {
     color: $white;
