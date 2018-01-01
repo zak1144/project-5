@@ -2,6 +2,9 @@
 
 %nav-item-disp {
     margin: em(14px) em(8px);
+    display: block;
+    width: 100%;
+    text-align: center;
 }
 %nav-item-link {
     font-size: em(20px);
